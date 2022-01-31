@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mueblería Noctis</title>
+
+    <!-- Importar CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+
+     <!-- Importar Fonts -->
+     <link
+     href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+     rel="stylesheet"
+   />
+
+    <!-- Importar íconos -->
+    <link rel="stylesheet" href="../icofont/icofont.min.css" />
+  </head>
+
+  <body>
+    <div class="contenedor">
+      <header>
+        <img src="../media/images/Logo.png" alt="Muebles Noctis" class="logo" />
+        <p class="title">Bienvenidos a Noctis Muebles</p>
+      </header>
+
+      <!-- Barra de Navegación -->
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="./productos.html">Productos</a>
+          </li>
+          <li>
+            <a href="./pago.html">Pagos</a>
+          </li>
+          <li>
+            <a href="./envio.html">Envíos</a>
+          </li>
+          <li>
+            <a href="./nosotros.html">Nosotros</a>
+          </li>
+          <li>
+            <a href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Contenido Principal -->
+      <main>
+        <div class="divMain">
+          <h1>Contacto</h1>
+
+          <form>
+            <fieldset>
+              <div class="campos">
+                <label for="nombre">Nombre y Apellido:</label>
+                <input
+                  type="text"
+                  name="nombre"
+                  placeholder="Escribe tu nombre completo"
+                />
+              </div>
+              <br />
+    
+              <div class="campos">
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Escribe tu email" />
+              </div>
+              <br />
+    
+              <div class="campos">
+                <label for="genero">Genero:</label>
+                <select name="genero">
+                  <option>--Seleccione--</option>
+                  <option value="hombre">Hombre</option>
+                  <option value="mujer">Mujer</option>
+                  <option value="noBinario">No Binario</option>
+                </select>
+              </div>
+              <br />
+    
+              <div class="campos">
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" placeholder="Escibe tu mensaje"></textarea>
+              </div>
+              <br />
+    
+              <div class="campos">
+                <input type="submit" value="Enviar" class="button" />
+                <input type="reset" value="Reiniciar" class="button" />
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <div class="redes">
+          <span>¡Seguinos en nuestras redes sociales!</span>
+          <ul>
+            <li>
+              <a href="https://www.instagram.com" target="_blank"
+                ><i class="icofont-instagram"></i
+              ></a>
+              <a href="https://www.facebook.com" target="_blank"
+                ><i class="icofont-facebook"></i
+              ></a>
+              <a href="https://www.twitter.com" target="_blank"
+                ><i class="icofont-twitter"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <p class="pie">
+          &copy; Todos los derechos reservados - Realizado por Lucas Sosa
+        </p>
+      </footer>
+    </div>
+  </body>
+</div>
+</html>
