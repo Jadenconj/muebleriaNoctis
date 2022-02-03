@@ -7,65 +7,39 @@ body {
   background: rgb(237, 224, 110);
 }
 
-/* Grid Layout */
-
-.contenedor {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "header header"
-    "nav nav"
-    "main main"
-    "footer footer";
-  justify-content: center;
-}
-
-header {
-  grid-area: header;
-  justify-self: center;
-  margin-bottom: 10px;
-  text-align: center;
+.logo {
+  width: 15%;
+  height: 15%;
 }
 
 .title {
   font-size: 40px;
-  font-family: Roboto Mono;
-  text-align: center;
 }
 
 nav {
-  grid-area: nav;
-  justify-self: center;
-  margin: 10px;
+  margin: 5px;
 }
 
-/* Estilos de Menu */
+.barra {
+  justify-self: center;
+
+}
+
 nav ul {
-  display: inline-flex;
   font-size: 20px;
-  margin: 10px;
+  margin: 5px;
   list-style: none;
 }
 
 nav ul li a {
-  color: rgb(2, 132, 245);
-  margin: 10px;
+  margin: 5px;
   border-radius: 50px;
-  padding: 10px;
+  padding: 5px;
   background-color: rgb(240, 233, 162);
 }
 
 a {
   text-decoration: none;
-}
-
-main {
-  grid-area: main;
-  padding: 2px 20px;
-}
-
-.divMain {
-  align-items: center;
 }
 
 h1 {
@@ -83,64 +57,29 @@ h2 {
   text-align: center;
 }
 
-.sectionMain {
-  display: flex;
-  margin-bottom: 30px;
-}
-
-.sectionMain img {
-  width: 70%;
-  padding: 5px;
-}
-
 .parrafo {
   font-size: 20px;
   text-align: center;
 }
 
-.video {
-  display: flex;
-  justify-content: center;
-}
-
-.muebles {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.productos {
-  width: 24%;
+.carousel-inner {
+  width: 50%;
   padding: 5px;
   background-color: rgb(133, 127, 77);
   transition-duration: 0.3s;
 }
 
-.productos:hover {
+.muebles {
+  background-color: rgb(223, 214, 141);
+}
+
+.carousel-inner:hover {
   transform: scale(1.05);
-}
-
-.banner {
-  display: block;
-  justify-content: center;
-}
-
-.imgBanner {
-  height: 90%;
-  width: 100%;
-}
-
-.medios {
-  padding: 20px;
 }
 
 .medios li {
   font-size: 18px;
   margin-left: 20px;
-}
-
-.metodo {
-  display: inline-block;
-  text-align: left;
 }
 
 form {
@@ -166,7 +105,6 @@ fieldset {
 }
 
 footer {
-  grid-area: footer;
   text-align: right;
   padding: 10px;
 }
@@ -187,25 +125,23 @@ i {
   margin-right: 50px;
   text-align: center;
 }
-.pie {
-  text-align: center;
-  font-weight: bold;
-}
 
 /* Media Queries */
+
 @media screen and (max-width: 1440px) and (min-width: 768px) {
+
   .imgNone {
     display: none;
-  }
-
-  .sectionMain img {
-    width: 50%;
   }
 
   .productos {
     width: 40%;
     display: grid;
     grid-template-columns: auto auto;
+  }
+
+  .imgBanner {
+    width: 100%;
   }
 }
 
@@ -218,19 +154,6 @@ i {
     font-size: 28px;
   }
 
-  nav {
-    margin: 2px;
-  }
-
-  nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  nav ul li {
-    padding: 2px;
-  }
 
   nav ul li a {
     margin: 2px;
@@ -246,13 +169,6 @@ i {
   h2 {
     font-size: 20px;
   }
-  .sectionMain {
-    justify-content: center;
-  }
-
-  .sectionMain img {
-    width: 80%;
-  }
 
   .imgNone {
     display: none;
@@ -262,6 +178,10 @@ i {
     display: none;
   }
 
+  .imgBanner {
+    width: 100%;
+  }
+  
   .parrafo {
     align-items: center;
     font-size: 16px;

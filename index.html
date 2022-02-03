@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mueblería Noctis</title>
 
+    <!-- Importar Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
     <!-- Importar CSS -->
     <link rel="stylesheet" href="./css/main.css" />
 
@@ -19,57 +27,113 @@
     <link rel="stylesheet" href="./icofont/icofont.min.css" />
   </head>
   <body>
-    <div class="contenedor">
-      <header>
-        <img src="./media/images/Logo.png" alt="Muebles Noctis" class="logo" />
-        <p class="title">Bienvenidos a Noctis Muebles</p>
+    <div class="container">
+      <header class="row">
+        <img
+          src="./media/images/Logo.png"
+          alt="Muebles Noctis"
+          class="logo d-block mx-auto"
+        />
+        <p class="title col-12 text-center">Bienvenidos a Noctis Muebles</p>
       </header>
 
       <!-- Barra de Navegación -->
-      <nav>
-        <ul>
-          <li>
-            <a href="./index.html">Inicio</a>
-          </li>
-          <li>
-            <a href="./pages/productos.html">Productos</a>
-          </li>
-          <li>
-            <a href="./pages/pago.html">Pagos</a>
-          </li>
-          <li>
-            <a href="./pages/envio.html">Envíos</a>
-          </li>
-          <li>
-            <a href="./pages/nosotros.html">Nosotros</a>
-          </li>
-          <li>
-            <a href="./pages/contacto.html">Contacto</a>
-          </li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex mx-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./pages/productos.html"
+                  >Productos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./pages/pago.html"
+                  >Pagos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./pages/envio.html"
+                  >Envios</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./pages/nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./pages/contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
 
       <!-- Contenido Principal -->
-      <main>
-        <div class="divMain">
-          <h1>¡Decora tu sala como siempre habías querido!</h1>
+      <main class="container">
+        <div class="row">
+          <h1 class="col-12 text-center">
+            ¡Decora tu sala como siempre habías querido!
+          </h1>
 
-          <section class="sectionMain">
+          <section class="sectionMain row">
             <img
               src="./media/images/Muebles 1.png"
               alt="Muebles 1"
-              class="imgNone"
+              class="img-fluid imgNone col-md-0 col-lg-4"
             />
-            <img src="./media/images/Muebles 2.png" alt="Muebles 2" />
+            <img
+              src="./media/images/Muebles 2.png"
+              alt="Muebles 2"
+              class="img-fluid imgNone2 col-md-6 col-lg-4"
+            />
             <img
               src="./media/images/Muebles 3.png"
               alt="Muebles 3"
-              class="imgNone2"
+              class="img-fluid col-md-6 col-lg-4"
             />
           </section>
 
-          <h2>Diseños Únicos</h2>
-          <p class="parrafo">
+          <h2 class="col-12 text-center">Diseños Únicos</h2>
+          <p class="parrafo text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
             inventore at. Vero exercitationem quibusdam voluptatum et quia
             nostrum, minus neque at sunt earum maiores deserunt sapiente atque
@@ -82,7 +146,7 @@
             sunt earum maiores deserunt sapiente atque sed, illum labore.
           </p>
 
-          <h2>Video Promocional</h2>
+          <h2 class="col-12 text-center">Video Promocional</h2>
           <section class="video">
             <iframe
               width="560"
@@ -92,12 +156,13 @@
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
+              class="d-block mx-auto"
             ></iframe>
           </section>
         </div>
       </main>
 
-      <footer>
+      <footer class="row">
         <div class="redes">
           <span>¡Seguinos en nuestras redes sociales!</span>
           <ul>
@@ -114,10 +179,16 @@
             </li>
           </ul>
         </div>
-        <p class="pie">
+        <p class="col-12 text-center">
           &copy; Todos los derechos reservados - Realizado por Lucas Sosa
         </p>
       </footer>
     </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
